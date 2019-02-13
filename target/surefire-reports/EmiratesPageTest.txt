@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: EmiratesPageTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 32.853 s <<< FAILURE! - in EmiratesPageTest
+VerifyTripPlanner_Results(EmiratesPageTest)  Time elapsed: 32.77 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@name='Departure airport'][0] (tried for 10 second(s) with 500 milliseconds interval)
+	at EmiratesPageTest.VerifyTripPlanner_Results(EmiratesPageTest.java:38)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: //input[@name='Departure airport'][0]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'ZEASHAN-PC', ip: '192.168.168.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: unknown
+	at EmiratesPageTest.VerifyTripPlanner_Results(EmiratesPageTest.java:38)
+

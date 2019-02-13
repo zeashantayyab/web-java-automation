@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: EmiratesPageTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 32.853 s <<< FAILURE! - in EmiratesPageTest
-VerifyTripPlanner_Results(EmiratesPageTest)  Time elapsed: 32.77 s  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 44.698 s <<< FAILURE! - in EmiratesPageTest
+VerifyTripPlanner_Results(EmiratesPageTest)  Time elapsed: 44.614 s  <<< ERROR!
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@name='Departure airport'][0] (tried for 10 second(s) with 500 milliseconds interval)
 	at EmiratesPageTest.VerifyTripPlanner_Results(EmiratesPageTest.java:38)
 Caused by: org.openqa.selenium.NoSuchElementException: 

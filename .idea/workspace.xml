@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8821810-dc66-4002-9615-5aa1244f81ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Emirates/PageFactory/EmiratesPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EmiratesPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Emirates/PageFactory/Emiratestripplanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Emirates/PageFactory/BookFlightPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TransportNSW/PageFactory/LoginPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TransportNSW/PageFactory/TripPlannerPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TransportNSW/Tests/LoginPageTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TransportNSW/Tests/TripPlannerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TransportNSW/Tests/LoginPageTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TransportNSW/Tests/TripPlannerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/EmiratesPageTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-EmiratesPageTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TransportNSW.Tests.LoginPageTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TransportNSW.Tests.TripPlannerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TransportNSW.Tests.LoginPageTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TransportNSW.Tests.TripPlannerTest.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -174,6 +168,39 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="web-java-automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-java-automation" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-java-automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-java-automation" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-java-automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-java-automation" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="Emirates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-java-automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-java-automation" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="Emirates" type="462c0819:PsiDirectoryNode" />
+              <item name="PageFactory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-java-automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-java-automation" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="Utilities" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -182,7 +209,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550049034866" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550049306307" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -330,9 +357,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17377399" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17377399" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -358,7 +384,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.32968882" />
-      <window_info anchor="right" id="Maven" order="8" weight="0.32942432" />
+      <window_info anchor="right" id="Maven" order="8" visible="true" weight="0.32942432" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17377399" />

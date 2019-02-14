@@ -1,0 +1,90 @@
+package Emirates.PageFactory;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
+
+public class StorePage {
+
+    //final variables
+    public static final String PAGE_TITLE = "My Store";
+    public static final String PAGE_URL = "http://automationpractice.com/index.php";
+
+    //local webdriver variable
+    WebDriver driver;
+
+    By Sign_in = By.xpath("//*[@id='header']/div[2]/div/div/nav/div[1]/a");
+    //By btn_Continue = By.xpath("//*[@id='panel0']/div/div/div/section/div[4]/div[1]/div[4]/a");//*[@id="panel0"]/div/div/div/section/div[4]/div[1]/div[4]/a  //*[@id="71226ce4-cf9c-4a87-8385-2869f42bf166"]
+   // By Arrival_Airport = By.xpath("//input[@name='Arrival airport'][0]");
+   // By bookingform = By.xpath("//*[@id='panel0']/div/div/div/section/div[1]/div/div[1]");///div/div/form");//*[@id="panel0"]/div/div/div/section/div[1]/div/div[1]
+    //-----------------------
+
+    //Page Class Constructor
+    public StorePage(WebDriver driver){
+        this.driver = driver;
+        //Create all webElement of this page
+       //PageFactory.initElements(driver, this);
+    }
+
+    //Action Methods
+    private void ClickSignin(){
+        try {
+//            WebDriverWait wait = new WebDriverWait(driver, 10);
+//            wait.until(ExpectedConditions.visibilityOfElementLocated(Departure_Airport));
+
+            TimeUnit.SECONDS.sleep(5);
+            driver.findElement(Sign_in).isDisplayed();
+            driver.findElement(Sign_in).click();
+            //driver.findElement(Departure_Airport).sendKeys(deptfield);
+        }
+        catch(NoSuchElementException nse){
+            System.out.println("Not Found - "+ Sign_in);
+        }
+        catch (InterruptedException ie){
+            System.out.println(ie);
+        }
+
+    }
+
+    //private void SetArrivalField(String arrivalField) {
+    //   driver.findElement(Arrival_Airport).sendKeys(arrivalField);
+    //}
+
+   // private void PressBtnCountine() {
+       // driver.findElement(btn_Continue).click();
+    //}
+
+    public void ClickSign() {
+
+
+        //SetArrivalField(enter_arrival);
+        // PressBtnCountine();
+
+
+        try {
+
+            ClickSignin();
+//            WebDriverWait wait = new WebDriverWait(driver, 10);
+//            wait.until(ExpectedConditions.visibilityOfElementLocated(Departure_Airport));
+
+            TimeUnit.SECONDS.sleep(15);
+
+            //driver.findElement(Departure_Airport).sendKeys(deptfield);
+        }
+        catch(NoSuchElementException nse){
+            System.out.println("Not Found - "+ Sign_in);
+        }
+        catch (InterruptedException ie){
+            System.out.println(ie);
+        }
+
+
+    }
+    //}
+
+}

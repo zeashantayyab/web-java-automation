@@ -1,4 +1,4 @@
-import Emirates.PageFactory.BookFlightPage;
+import Emirates.PageFactory.StorePage;
 import Utilities.*;
 import org.junit.After;
 import org.junit.Before;
@@ -8,11 +8,11 @@ import Utilities.DriverFactory.browserType;
 import java.util.concurrent.TimeUnit;
 import static org.junit.Assert.assertTrue;
 
-public class EmiratesPageTest {
+public class StorePageTest {
 
     WebDriver driver;
     DriverFactory.browserType type = browserType.CHROME;
-    BookFlightPage bookFlightPageObj;
+    StorePage storePageObj;
 
     @Before
     public void setup(){
@@ -20,7 +20,7 @@ public class EmiratesPageTest {
         driver = DriverFactory.getDriver(type);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        bookFlightPageObj = new BookFlightPage(driver);
+        storePageObj = new StorePage(driver);
 
     }
 
@@ -33,9 +33,9 @@ public class EmiratesPageTest {
     @Test
     public void VerifyTripPlanner_Results(){
 
-        driver.get(bookFlightPageObj.PAGE_URL);
+        driver.get(storePageObj.PAGE_URL);
         //Enter Trip From and To Location and Press Go Button
-        bookFlightPageObj.EnterTripDetail("Lahore (LHE)","Dubai (DXB)");
+        storePageObj.ClickSign();
 
 
 

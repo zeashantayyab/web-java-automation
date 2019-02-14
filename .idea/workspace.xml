@@ -3,15 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="d8821810-dc66-4002-9615-5aa1244f81ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Emirates/PageFactory/BookFlightPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Emirates/PageFactory/StorePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EmiratesPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StorePageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Emirates/PageFactory/BookFlightPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Emirates/PageFactory/StorePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Emirates/PageFactory/StorePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/DriverFactory$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/DriverFactory$browserType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/DriverFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/HelperClass.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/EmiratesPageTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-EmiratesPageTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/EmiratesPageTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/StorePageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+            <state relative-caret-position="1050">
+              <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Emirates/PageFactory/StorePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="64" column="25" lean-forward="true" selection-start-line="63" selection-end-line="64" selection-end-column="25" />
+            <state relative-caret-position="302">
+              <caret line="116" column="9" lean-forward="true" selection-start-line="116" selection-start-column="9" selection-end-line="116" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,7 +173,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550139203130" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550153980304" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -287,6 +285,14 @@
       <option name="presentableId" value="Default" />
       <updated>1540100378929</updated>
     </task>
+    <task id="LOCAL-00001" summary="SIgn in code">
+      <created>1550139284822</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1550139284831</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -353,6 +359,10 @@
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.32968882" />
       <window_info active="true" anchor="right" id="Maven" order="8" visible="true" weight="0.32942432" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="SIgn in code" />
+    <option name="LAST_COMMIT_MESSAGE" value="SIgn in code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -515,8 +525,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/StorePageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+        <state relative-caret-position="1050">
+          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -525,8 +535,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Emirates/PageFactory/StorePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="64" column="25" lean-forward="true" selection-start-line="63" selection-end-line="64" selection-end-column="25" />
+        <state relative-caret-position="302">
+          <caret line="116" column="9" lean-forward="true" selection-start-line="116" selection-start-column="9" selection-end-line="116" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

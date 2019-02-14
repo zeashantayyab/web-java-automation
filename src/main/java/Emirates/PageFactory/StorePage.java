@@ -19,20 +19,20 @@ public class StorePage {
     WebDriver driver;
 
     By Sign_in = By.xpath("//*[@id='header']/div[2]/div/div/nav/div[1]/a");
-    //By btn_Continue = By.xpath("//*[@id='panel0']/div/div/div/section/div[4]/div[1]/div[4]/a");//*[@id="panel0"]/div/div/div/section/div[4]/div[1]/div[4]/a  //*[@id="71226ce4-cf9c-4a87-8385-2869f42bf166"]
-   // By Arrival_Airport = By.xpath("//input[@name='Arrival airport'][0]");
-   // By bookingform = By.xpath("//*[@id='panel0']/div/div/div/section/div[1]/div/div[1]");///div/div/form");//*[@id="panel0"]/div/div/div/section/div[1]/div/div[1]
+    By create_accfield = By.xpath("//*[@id='email_create']");
+    By create_accbutton = By.xpath("//*[@id='SubmitCreate']/span");
+    // By bookingform = By.xpath("//*[@id='panel0']/div/div/div/section/div[1]/div/div[1]");///div/div/form");//*[@id="panel0"]/div/div/div/section/div[1]/div/div[1]
     //-----------------------
 
     //Page Class Constructor
-    public StorePage(WebDriver driver){
+    public StorePage(WebDriver driver) {
         this.driver = driver;
         //Create all webElement of this page
-       //PageFactory.initElements(driver, this);
+        //PageFactory.initElements(driver, this);
     }
 
     //Action Methods
-    private void ClickSignin(){
+    private void ClickSignin() {
         try {
 //            WebDriverWait wait = new WebDriverWait(driver, 10);
 //            wait.until(ExpectedConditions.visibilityOfElementLocated(Departure_Airport));
@@ -41,41 +41,58 @@ public class StorePage {
             driver.findElement(Sign_in).isDisplayed();
             driver.findElement(Sign_in).click();
             //driver.findElement(Departure_Airport).sendKeys(deptfield);
-        }
-        catch(NoSuchElementException nse){
-            System.out.println("Not Found - "+ Sign_in);
-        }
-        catch (InterruptedException ie){
+        } catch (NoSuchElementException nse) {
+            System.out.println("Not Found - " + Sign_in);
+        } catch (InterruptedException ie) {
             System.out.println(ie);
         }
 
+
+        //private void SetArrivalField(String arrivalField) {
+        //   driver.findElement(Arrival_Airport).sendKeys(arrivalField);
+        //}
+
+        // private void PressBtnCountine() {
+        // driver.findElement(btn_Continue).click();
+        //}
     }
-
-    //private void SetArrivalField(String arrivalField) {
-    //   driver.findElement(Arrival_Airport).sendKeys(arrivalField);
-    //}
-
-   // private void PressBtnCountine() {
-       // driver.findElement(btn_Continue).click();
-    //}
-
-    public void ClickSign() {
+        public void ClickSign(){
 
 
-        //SetArrivalField(enter_arrival);
-        // PressBtnCountine();
+            //SetArrivalField(enter_arrival);
+            // PressBtnCountine();
 
 
-        try {
+            try {
 
-            ClickSignin();
+                ClickSignin();
 //            WebDriverWait wait = new WebDriverWait(driver, 10);
 //            wait.until(ExpectedConditions.visibilityOfElementLocated(Departure_Airport));
 
-            TimeUnit.SECONDS.sleep(15);
+                TimeUnit.SECONDS.sleep(15);
 
-            //driver.findElement(Departure_Airport).sendKeys(deptfield);
+                //driver.findElement(Departure_Airport).sendKeys(deptfield);
+            } catch (NoSuchElementException nse) {
+                System.out.println("Not Found - " + Sign_in);
+            } catch (InterruptedException ie) {
+                System.out.println(ie);
+            }
+
+
         }
+
+    }
+
+/*
+    //Action methods 2
+    private void setCreateAccount(String createAccount){
+        try {
+            TimeUnit.SECONDS.sleep(5);
+            driver.findElement(create_accfield).isDisplayed();
+            driver.findElement(create_accfield).click();
+            driver.findElement(create_accfield).sendKeys(createAccount);
+        }
+
         catch(NoSuchElementException nse){
             System.out.println("Not Found - "+ Sign_in);
         }
@@ -83,8 +100,20 @@ public class StorePage {
             System.out.println(ie);
         }
 
+        public void CreateAcc() {
 
+            try {
+
+                setCreateAccount(createAccount);
+                TimeUnit.SECONDS.sleep(15);
+
+            }
+            catch(NoSuchElementException nse){
+                System.out.println("Not Found - "+ create_accfield);
+            }
+            catch (InterruptedException ie){
+                System.out.println(ie);
+            }
+        }
     }
-    //}
-
-}
+*/

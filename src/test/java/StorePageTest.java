@@ -31,11 +31,13 @@ public class StorePageTest {
 
 
     @Test
-    public void VerifyTripPlanner_Results(){
+    public void createAccount_Results(){
 
         driver.get(storePageObj.PAGE_URL);
-        //Enter Trip From and To Location and Press Go Button
         storePageObj.ClickSign();
+        storePageObj.CreateAcc("zeashan.tayyyab@gmail.com");
+        storePageObj.ClickCreateButn();
+        storePageObj.ClickMrCheckbox();
 
 
 

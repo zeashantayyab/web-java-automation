@@ -40,6 +40,7 @@ public class StorePageTest {
         storePageObj.ClickMrCheckbox();
         storePageObj.firstname("Zeashan");
         storePageObj.setLastname1("Tayyab");
+        storePageObj.setEmail_id1("zeashan.tayyab@gmail.com");
 
 
 

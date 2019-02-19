@@ -47,7 +47,7 @@ public class StorePage {
 //            WebDriverWait wait = new WebDriverWait(driver, 10);
 //            wait.until(ExpectedConditions.visibilityOfElementLocated(Departure_Airport));
 
-            TimeUnit.SECONDS.sleep(5);
+            TimeUnit.SECONDS.sleep(2);
             driver.findElement(Sign_in).isDisplayed();
             driver.findElement(Sign_in).click();
             //driver.findElement(Departure_Airport).sendKeys(deptfield);
@@ -69,7 +69,7 @@ public class StorePage {
 //            WebDriverWait wait = new WebDriverWait(driver, 10);
 //            wait.until(ExpectedConditions.visibilityOfElementLocated(Departure_Airport));
 
-            TimeUnit.SECONDS.sleep(5);
+            TimeUnit.SECONDS.sleep(2);
 
             //driver.findElement(Departure_Airport).sendKeys(deptfield);
         } catch (NoSuchElementException nse) {
@@ -85,7 +85,7 @@ public class StorePage {
     //Action methods 2
     private void setCreateAccount(String createAccount) {
         try {
-            TimeUnit.SECONDS.sleep(5);
+            TimeUnit.SECONDS.sleep(2);
             driver.findElement(create_accfield).isDisplayed();
             driver.findElement(create_accfield).click();
             driver.findElement(create_accfield).sendKeys(createAccount);
@@ -104,7 +104,7 @@ public class StorePage {
         try {
 
             setCreateAccount(createAccount1);
-            TimeUnit.SECONDS.sleep(5);
+            TimeUnit.SECONDS.sleep(2);
 
         } catch (NoSuchElementException nse) {
             System.out.println("Not Found - " + create_accfield);
@@ -118,7 +118,7 @@ public class StorePage {
     //Action methods 3
     private void setclickCreateButton() {
         try {
-            TimeUnit.SECONDS.sleep(5);
+            TimeUnit.SECONDS.sleep(2);
             driver.findElement(creat_button).isDisplayed();
             driver.findElement(creat_button).click();
 
@@ -137,7 +137,7 @@ public class StorePage {
         try {
 
             setclickCreateButton();
-            TimeUnit.SECONDS.sleep(5);
+            TimeUnit.SECONDS.sleep(2);
 
         } catch (NoSuchElementException nse) {
             System.out.println("Not Found - " + create_accfield);
@@ -150,7 +150,7 @@ public class StorePage {
     //Action methods 4
     private void setclickTitle() {
         try {
-            TimeUnit.SECONDS.sleep(5);
+            TimeUnit.SECONDS.sleep(2);
             driver.findElement(title_Mr).isDisplayed();
             driver.findElement(title_Mr).click();
 
@@ -181,7 +181,7 @@ public class StorePage {
     //Action methods 5
     private void setfirstName(String firstname ) {
         try {
-            TimeUnit.SECONDS.sleep(5);
+            TimeUnit.SECONDS.sleep(2);
             driver.findElement(First_name).isDisplayed();
             driver.findElement(First_name).click();
             driver.findElement(First_name).sendKeys(firstname);
@@ -201,7 +201,7 @@ public class StorePage {
         try {
 
             setfirstName(firstName1);
-            TimeUnit.SECONDS.sleep(5);
+            TimeUnit.SECONDS.sleep(2);
 
         } catch (NoSuchElementException nse) {
             System.out.println("Not Found - " + First_name);
@@ -213,7 +213,7 @@ public class StorePage {
     //Action methods 6
     private void setLast_name(String lastName ) {
         try {
-            TimeUnit.SECONDS.sleep(5);
+            TimeUnit.SECONDS.sleep(2);
             driver.findElement(Last_name).isDisplayed();
             driver.findElement(Last_name).click();
             driver.findElement(Last_name).sendKeys(lastName);
@@ -232,8 +232,8 @@ public class StorePage {
 
         try {
 
-            setLastname1(lastname1);
-            TimeUnit.SECONDS.sleep(5);
+            setLast_name(lastname1);
+            TimeUnit.SECONDS.sleep(2);
 
         } catch (NoSuchElementException nse) {
             System.out.println("Not Found - " + Last_name);
@@ -241,4 +241,38 @@ public class StorePage {
             System.out.println(ie);
         }
     }
+
+    private void setEmail_id(String Email_id ) {
+        try {
+            TimeUnit.SECONDS.sleep(2);
+            driver.findElement(Emai_id).isDisplayed();
+            driver.findElement(Emai_id).click();
+            driver.findElement(Emai_id).clear();
+            TimeUnit.SECONDS.sleep(2);
+            driver.findElement(Emai_id).sendKeys(Email_id);
+
+        } catch (
+                NoSuchElementException nse) {
+            System.out.println("Not Found - " + Emai_id);
+        } catch (
+                InterruptedException ie) {
+            System.out.println(ie);
+        }
+
+    }
+
+    public void setEmail_id1(String Email_id1) {
+
+        try {
+
+            setEmail_id(Email_id1);
+            TimeUnit.SECONDS.sleep(2);
+
+        } catch (NoSuchElementException nse) {
+            System.out.println("Not Found - " + Emai_id);
+        } catch (InterruptedException ie) {
+            System.out.println(ie);
+        }
+    }
+
 }

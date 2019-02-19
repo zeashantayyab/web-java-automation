@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8821810-dc66-4002-9615-5aa1244f81ae" name="Default Changelist" comment="19-02-19">
+    <list default="true" id="d8821810-dc66-4002-9615-5aa1244f81ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Emirates/PageFactory/StorePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Emirates/PageFactory/StorePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StorePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StorePageTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Emirates/PageFactory/StorePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="766">
-              <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+            <state relative-caret-position="392">
+              <caret line="260" lean-forward="true" selection-start-line="260" selection-end-line="260" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -168,7 +167,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550583249240" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550584179361" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -315,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1550566318431</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="19-02-19">
+      <created>1550583259899</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1550583259899</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -560,8 +566,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Emirates/PageFactory/StorePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="766">
-          <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+        <state relative-caret-position="392">
+          <caret line="260" lean-forward="true" selection-start-line="260" selection-end-line="260" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

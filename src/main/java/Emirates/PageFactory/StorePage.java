@@ -241,7 +241,7 @@ public class StorePage {
             System.out.println(ie);
         }
     }
-
+    //Action methods 7
     private void setEmail_id(String Email_id ) {
         try {
             TimeUnit.SECONDS.sleep(2);

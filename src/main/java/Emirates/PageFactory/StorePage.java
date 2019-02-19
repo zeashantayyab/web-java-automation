@@ -22,6 +22,16 @@ public class StorePage {
     By create_accbutton = By.xpath("//*[@id='SubmitCreate']/span");
     By creat_button = By.xpath("//*[@id='SubmitCreate']");
     By title_Mr= By.xpath("//*[@id='id_gender1']");
+    By First_name= By.xpath("//*[@id='customer_firstname']");
+    By Last_name= By.xpath("//*[@id='customer_lastname']");
+    By Emai_id=By.xpath("//*[@id='email']");
+    By Password=By.xpath("//*[@id='passwd']");
+    By DOB_firstdropdown=By.xpath("//*[@id='days']");
+    By DOB_seconddropdown =By.xpath("//*[@id='months']");
+    By DOB_3rddropdpwn= By.xpath("//*[@id='years']");
+    By newslettercheckbox= By.xpath("//*[@id='newsletter']");
+    By specialoffercheckbox= By.xpath("//*[@id='optin']");
+
     //-----------------------
 
     //Page Class Constructor
@@ -59,7 +69,7 @@ public class StorePage {
 //            WebDriverWait wait = new WebDriverWait(driver, 10);
 //            wait.until(ExpectedConditions.visibilityOfElementLocated(Departure_Airport));
 
-            TimeUnit.SECONDS.sleep(15);
+            TimeUnit.SECONDS.sleep(5);
 
             //driver.findElement(Departure_Airport).sendKeys(deptfield);
         } catch (NoSuchElementException nse) {
@@ -94,7 +104,7 @@ public class StorePage {
         try {
 
             setCreateAccount(createAccount1);
-            TimeUnit.SECONDS.sleep(15);
+            TimeUnit.SECONDS.sleep(5);
 
         } catch (NoSuchElementException nse) {
             System.out.println("Not Found - " + create_accfield);
@@ -127,7 +137,7 @@ public class StorePage {
         try {
 
             setclickCreateButton();
-            TimeUnit.SECONDS.sleep(15);
+            TimeUnit.SECONDS.sleep(5);
 
         } catch (NoSuchElementException nse) {
             System.out.println("Not Found - " + create_accfield);
@@ -159,10 +169,74 @@ public class StorePage {
         try {
 
             setclickTitle();
-            TimeUnit.SECONDS.sleep(15);
+            TimeUnit.SECONDS.sleep(5);
 
         } catch (NoSuchElementException nse) {
             System.out.println("Not Found - " + title_Mr);
+        } catch (InterruptedException ie) {
+            System.out.println(ie);
+        }
+    }
+
+    //Action methods 5
+    private void setfirstName(String firstname ) {
+        try {
+            TimeUnit.SECONDS.sleep(5);
+            driver.findElement(First_name).isDisplayed();
+            driver.findElement(First_name).click();
+            driver.findElement(First_name).sendKeys(firstname);
+
+        } catch (
+                NoSuchElementException nse) {
+            System.out.println("Not Found - " + First_name);
+        } catch (
+                InterruptedException ie) {
+            System.out.println(ie);
+        }
+
+    }
+
+    public void firstname(String firstName1) {
+
+        try {
+
+            setfirstName(firstName1);
+            TimeUnit.SECONDS.sleep(5);
+
+        } catch (NoSuchElementException nse) {
+            System.out.println("Not Found - " + First_name);
+        } catch (InterruptedException ie) {
+            System.out.println(ie);
+        }
+    }
+
+    //Action methods 6
+    private void setLast_name(String lastName ) {
+        try {
+            TimeUnit.SECONDS.sleep(5);
+            driver.findElement(Last_name).isDisplayed();
+            driver.findElement(Last_name).click();
+            driver.findElement(Last_name).sendKeys(lastName);
+
+        } catch (
+                NoSuchElementException nse) {
+            System.out.println("Not Found - " + Last_name);
+        } catch (
+                InterruptedException ie) {
+            System.out.println(ie);
+        }
+
+    }
+
+    public void setLastname1(String lastname1) {
+
+        try {
+
+            setLastname1(lastname1);
+            TimeUnit.SECONDS.sleep(5);
+
+        } catch (NoSuchElementException nse) {
+            System.out.println("Not Found - " + Last_name);
         } catch (InterruptedException ie) {
             System.out.println(ie);
         }

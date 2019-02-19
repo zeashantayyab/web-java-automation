@@ -38,6 +38,8 @@ public class StorePageTest {
         storePageObj.CreateAcc("zeashan.tayyyab@gmail.com");
         storePageObj.ClickCreateButn();
         storePageObj.ClickMrCheckbox();
+        storePageObj.firstname("Zeashan");
+        storePageObj.setLastname1("Tayyab");
 
 
 

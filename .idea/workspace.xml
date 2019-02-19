@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d8821810-dc66-4002-9615-5aa1244f81ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Emirates/PageFactory/StorePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Emirates/PageFactory/StorePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StorePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StorePageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/StorePageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+            <state relative-caret-position="167">
+              <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,10 +26,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Emirates/PageFactory/StorePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
+            <state relative-caret-position="796">
               <caret line="156" column="31" selection-start-line="156" selection-start-column="16" selection-end-line="156" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -169,7 +166,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550556767278" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550559207696" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -295,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1550154034865</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="19-02-19">
+      <created>1550559052505</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1550559052505</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -366,7 +370,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="SIgn in code" />
     <MESSAGE value="SIgn in code 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="SIgn in code 2" />
+    <MESSAGE value="19-02-19" />
+    <option name="LAST_COMMIT_MESSAGE" value="19-02-19" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -527,20 +532,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Emirates/PageFactory/StorePage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/StorePageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="156" column="31" selection-start-line="156" selection-start-column="16" selection-end-line="156" selection-end-column="31" />
+        <state relative-caret-position="167">
+          <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StorePageTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Emirates/PageFactory/StorePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+        <state relative-caret-position="796">
+          <caret line="156" column="31" selection-start-line="156" selection-start-column="16" selection-end-line="156" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

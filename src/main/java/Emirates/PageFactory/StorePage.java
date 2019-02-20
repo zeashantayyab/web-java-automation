@@ -3,6 +3,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.NoSuchElementException;
@@ -26,9 +27,9 @@ public class StorePage {
     By Last_name= By.xpath("//*[@id='customer_lastname']");
     By Emai_id=By.xpath("//*[@id='email']");
     By Password=By.xpath("//*[@id='passwd']");
-    By DOB_firstdropdown=By.xpath("//*[@id='days']");
-    By DOB_seconddropdown =By.xpath("//*[@id='months']");
-    By DOB_3rddropdpwn= By.xpath("//*[@id='years']");
+    By dayDropDown=By.xpath("//select[@id='days']");
+    By monthDropDown =By.xpath("//select[@id='months']");
+    By yearDropDown= By.xpath("//select[@id='years']");
     By newslettercheckbox= By.xpath("//*[@id='newsletter']");
     By specialoffercheckbox= By.xpath("//*[@id='optin']");
 
@@ -274,5 +275,29 @@ public class StorePage {
             System.out.println(ie);
         }
     }
+    //Action methods 8
+    public void SetDateOfBirth(String  day, String month, String year) {
+        try {
+            Select daySelectObj = new Select(driver.findElement(dayDropDown));
+            Select monthSelectObj = new Select(driver.findElement(monthDropDown));
+            Select yearSelectObj = new Select(driver.findElement(yearDropDown));
+
+            daySelectObj.selectByValue(day);
+            monthSelectObj.selectByValue(month);
+            yearSelectObj.selectByValue(year);
+
+            System.out.println("day = "+day+" month = "+month+" year = "+year);
+
+        } catch (
+                NoSuchElementException nse) {
+            System.out.println("Not Found - " + Emai_id);
+        }
+
+    }
+
+
+
+
+
 
 }

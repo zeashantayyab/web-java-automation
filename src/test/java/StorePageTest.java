@@ -1,4 +1,6 @@
 import Emirates.PageFactory.StorePage;
+import Emirates.PageFactory.OrderCheckoutPage;
+
 import Utilities.*;
 import org.junit.After;
 import org.junit.Before;
@@ -13,6 +15,7 @@ public class StorePageTest {
     WebDriver driver;
     DriverFactory.browserType type = browserType.CHROME;
     StorePage storePageObj;
+    OrderCheckoutPage orderCheckoutPageObj;
 
     @Before
     public void setup(){
@@ -21,6 +24,7 @@ public class StorePageTest {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         storePageObj = new StorePage(driver);
+        orderCheckoutPageObj = new OrderCheckoutPage(driver);
 
     }
 
@@ -30,7 +34,7 @@ public class StorePageTest {
     }
 
 
-    @Test
+//    @Test
     public void createAccount_Results(){
 
         driver.get(storePageObj.PAGE_URL);
@@ -41,6 +45,7 @@ public class StorePageTest {
         storePageObj.firstname("Zeashan");
         storePageObj.setLastname1("Tayyab");
         storePageObj.setEmail_id1("zeashan.tayyab@gmail.com");
+        storePageObj.SetDateOfBirth("1","6", "2000");
 
 
 
@@ -50,4 +55,20 @@ public class StorePageTest {
         driver.close();
     }
 
+    //I will got to Woman page, select item, Checkout > Land  on Checkout page
+    //i will verify the total amount by unitprice * Qty
+    @Test
+    public void VerifyTotalAmountOnCheckoutPage(){
+
+        driver.get(orderCheckoutPageObj.PAGE_URL);
+        System.out.println("title"+orderCheckoutPageObj.PAGE_TITLE);
+        assertTrue(driver.getTitle().equals(orderCheckoutPageObj.PAGE_TITLE));
+
+        orderCheckoutPageObj.Go();
+
+        System.out.println(">>>> Successfully Displayed Woman Page ");
+
+
+        driver.close();
+    }
 }

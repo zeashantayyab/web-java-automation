@@ -282,6 +282,7 @@ public class StorePage {
             Select monthSelectObj = new Select(driver.findElement(monthDropDown));
             Select yearSelectObj = new Select(driver.findElement(yearDropDown));
 
+
             daySelectObj.selectByValue(day);
             monthSelectObj.selectByValue(month);
             yearSelectObj.selectByValue(year);

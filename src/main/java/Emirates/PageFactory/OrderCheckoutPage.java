@@ -1,54 +1,69 @@
 package Emirates.PageFactory;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import java.util.concurrent.TimeUnit;
+
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
 
 public class OrderCheckoutPage {
 
     //final variables
     public static final String PAGE_TITLE = "Women - My Store";
-    public static final String PAGE_URL = "http://automationpractice.com/index.php?id_category=3&controller=category";
+    public static final String PAGE_URL = "http://automationpractice.com/index.php?id_product=5&controller=product";
 
     //local webdriver variable
-    WebDriver driver;
-    By linkTop = By.xpath("//*[@id='subcategories']/ul/li[1]/h5/a");
-    By top = By.xpath("//*[@id='center_column']/ul/li[1]/div/div[2]/div[2]/a[1]");
-    By Blouses= By. xpath("//*[@id='subcategories']/ul/li[2]/div[1]/a/img)");
-
+    WebDriver webDriver;
+    By prodCondition = By.xpath(".//p[@id='product_condition']/span");
+    By newPrice = By.xpath(".//div[@class='price']/p[@class='our_price_display']/span");
+    By reductionPercent = By.xpath(".//div[@class='price']/p[@id='reduction_percent']");
+    By oldPrice = By.xpath(".//div[@class='price']/p[@id='old_price']/span[@id='old_price_display']");
 
 
     //Page Class Constructor
     public OrderCheckoutPage(WebDriver driver) {
-        this.driver = driver;
-        //Create all webElement of this page
-        //PageFactory.initElements(driver, this);
-    //-----------------------
+        this.webDriver = driver;
+
+
 
     }
 
-    public void Go (){
-        try{
-            driver.findElement(linkTop).click();
-            driver.findElement(linkTop).isDisplayed();
-            TimeUnit.SECONDS.sleep(5);
-            driver.findElement(top).click();
-            driver.findElement(top).isDisplayed();
-            TimeUnit.SECONDS.sleep(5);
+    /**
+     * Round to certain number of decimals
+     *
+     * @param d
+     * @param decimalPlace
+     * @return
+     */
+    public static float round(float d, int decimalPlace) {
+        BigDecimal bd = new BigDecimal(Float.toString(d));
+        bd = bd.setScale(decimalPlace, BigDecimal.ROUND_HALF_UP);
+        return bd.floatValue();
+    }
 
-//           Mouse hover https://stackoverflow.com/questions/17293914/how-to-perform-mouseover-function-in-selenium-webdriver-using-java
-       //     Actions action = new Actions(driver);
-         //   WebElement we = webdriver.findElement(By.xpath("html/body/div[13]/ul/li[4]/a"));
-          //  action.moveToElement(we).moveToElement(webdriver.findElement(By.xpath("/expression-here"))).click().build().perform();
+    public String GetProductCondition() {
+        webDriver.findElement(prodCondition).isDisplayed();
+
+        return  webDriver.findElement(prodCondition).getText();
+    }
+
+    public boolean IsReducedPriceCorrect() {
+
+        String newPriceStr = webDriver.findElement(newPrice).getText().replace("$","");
+        String oldPriceStr = webDriver.findElement(oldPrice).getText().replace("$","");
+        String reductionPercentStr = webDriver.findElement(reductionPercent).getText().replace("%","");
+
+        float newPriceFloat = Float.parseFloat(newPriceStr);
+        float oldPriceFloat = Float.parseFloat(oldPriceStr);
+        float percentInt =  Float.parseFloat(reductionPercentStr);
+
+        float result = round(((oldPriceFloat*percentInt)/100)+oldPriceFloat,2);
+
+        if(newPriceFloat==result) {
+            return true;
 
         }
-        catch (Exception ex) {
-
-
-        }
-
-
-
+        else
+            return false;
     }
 
 }

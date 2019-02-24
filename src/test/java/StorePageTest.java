@@ -8,6 +8,8 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import Utilities.DriverFactory.browserType;
 import java.util.concurrent.TimeUnit;
+
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class StorePageTest {
@@ -61,14 +63,12 @@ public class StorePageTest {
     public void VerifyTotalAmountOnCheckoutPage(){
 
         driver.get(orderCheckoutPageObj.PAGE_URL);
-        System.out.println("title"+orderCheckoutPageObj.PAGE_TITLE);
-        assertTrue(driver.getTitle().equals(orderCheckoutPageObj.PAGE_TITLE));
 
-        orderCheckoutPageObj.Go();
+        assertEquals(orderCheckoutPageObj.GetProductCondition(),"New");
 
-        System.out.println(">>>> Successfully Displayed Woman Page ");
-
+        assertTrue(orderCheckoutPageObj.IsReducedPriceCorrect());
 
         driver.close();
-    }
+
+   }
 }

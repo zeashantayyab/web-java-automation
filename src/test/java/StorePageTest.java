@@ -37,7 +37,7 @@ public class StorePageTest {
 
 
 //    @Test
-    public void createAccount_Results(){
+   /* public void createAccount_Results(){
 
         driver.get(storePageObj.PAGE_URL);
         storePageObj.ClickSign();
@@ -56,7 +56,7 @@ public class StorePageTest {
 
         driver.close();
     }
-
+*/
     //I will got to Woman page, select item, Checkout > Land  on Checkout page
     //i will verify the total amount by unitprice * Qty
     @Test
@@ -67,8 +67,13 @@ public class StorePageTest {
         assertEquals(orderCheckoutPageObj.GetProductCondition(),"New");
 
         assertTrue(orderCheckoutPageObj.IsReducedPriceCorrect());
+        orderCheckoutPageObj.ClickPlusButton();
+        orderCheckoutPageObj.ClickAddToCart();
 
-        driver.close();
+        assertEquals(orderCheckoutPageObj.ProductSuccessfullyAdded(), "New");
+        assertTrue(orderCheckoutPageObj.ProductSuccessfullyAdded());
 
    }
+
+
 }

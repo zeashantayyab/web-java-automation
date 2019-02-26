@@ -48,18 +48,18 @@ public class StorePage {
 //            WebDriverWait wait = new WebDriverWait(driver, 10);
 //            wait.until(ExpectedConditions.visibilityOfElementLocated(Departure_Airport));
 
-            TimeUnit.SECONDS.sleep(2);
-            driver.findElement(Sign_in).isDisplayed();
-            driver.findElement(Sign_in).click();
-            //driver.findElement(Departure_Airport).sendKeys(deptfield);
-        } catch (NoSuchElementException nse) {
-            System.out.println("Not Found - " + Sign_in);
-        } catch (InterruptedException ie) {
-            System.out.println(ie);
-        }
-
-
+        TimeUnit.SECONDS.sleep(2);
+        driver.findElement(Sign_in).isDisplayed();
+        driver.findElement(Sign_in).click();
+        //driver.findElement(Departure_Airport).sendKeys(deptfield);
+    } catch (NoSuchElementException nse) {
+        System.out.println("Not Found - " + Sign_in);
+    } catch (InterruptedException ie) {
+        System.out.println(ie);
     }
+
+
+}
 
     public void ClickSign() {
 

@@ -70,7 +70,7 @@ public class StorePageTest {
         orderCheckoutPageObj.ClickPlusButton();
         orderCheckoutPageObj.ClickAddToCart();
 
-        assertEquals(orderCheckoutPageObj.ProductSuccessfullyAdded(), "New");
+        assertEquals(orderCheckoutPageObj.GetProductCondition(), "New");
         assertTrue(orderCheckoutPageObj.ProductSuccessfullyAdded());
 
    }
